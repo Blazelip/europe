@@ -1,0 +1,24 @@
+.companies {
+  @media #{$screen-desktop} {
+    border-left: 1px solid #d7d9df;
+    padding-left: 49px;
+    width: 379px;
+  }
+}
+
+.companies__title {
+
+}
+
+.companies-msg {
+  @include fz-lh(14px, 170%);
+
+  text-align: center;
+
+  opacity: 0.5;
+  color: $text-color-dark;
+
+  @media #{$screen-desktop} {
+    text-align: left;
+  }
+}

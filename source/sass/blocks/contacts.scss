@@ -1,0 +1,48 @@
+.contacts {
+  @media #{$screen-desktop} {
+    border-left: 1px solid #d7d9df;
+    width: 389px;
+    padding-left: 90px;
+  }
+}
+
+.contacts__title {
+
+}
+
+.contacts__list {
+
+}
+
+.contacts__item {
+  margin-bottom: 15px;
+}
+
+.contacts__link {
+  color: $red;
+  text-decoration: underline;
+
+  &--mail {
+    @include fz-lh(14px, 17px);
+  }
+
+  &--phone {
+    font-size: 16px;
+  }
+}
+
+.contacts__mail-mobile {
+  display: none;
+
+  @media (max-width: $tablet-width-only) {
+    display: inline;
+  }
+}
+
+.contacts__mail-desktop {
+  display: none;
+
+  @media #{$screen-desktop} {
+    display: inline;
+  }
+}

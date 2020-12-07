@@ -1,0 +1,9 @@
+.footer {
+  @media #{$screen-desktop} {
+    padding-bottom: 81px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+}

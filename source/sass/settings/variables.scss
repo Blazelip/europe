@@ -1,0 +1,27 @@
+$tablet-width: 768px;
+$desktop-width: 1232px;
+$mobile-width-only: 767px;
+$tablet-width-only: 1231px;
+
+$screen-mobile: (max-width: $mobile-width-only);
+$screen-tablet: (min-width: $tablet-width);
+$screen-desktop: (min-width: $desktop-width);
+
+$red: #fe7865;
+$orange: #f17d4b;
+$black: #141517;
+$white: #ffffff;
+$grey: #2c2e3f;
+$light: #fbf8f8;
+
+$text-color: $grey;
+$text-color-dark: $black;
+$text-color-background: $white;
+
+$button-color: $red;
+$button-color-hover: $orange;
+
+$default-font: "Montserrat", "Arial", sans-serif;
+
+$long-transition: 0.4s;
+$short-transition: 0.2s;

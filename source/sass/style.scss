@@ -1,0 +1,50 @@
+// SETTINGS
+
+@import "settings/normalize.scss";
+@import "settings/fonts.scss";
+@import "settings/variables.scss";
+@import "settings/mixins.scss";
+@import "settings/global.scss";
+
+// GLOBAL
+
+@import "blocks/page-body.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/list.scss";
+@import "blocks/button.scss";
+@import "blocks/title.scss";
+
+// HEADER
+
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-navigation.scss";
+@import "blocks/telephone.scss";
+
+// MAIN
+
+@import "blocks/intro.scss";
+@import "blocks/main-title.scss";
+@import "blocks/places.scss";
+@import "blocks/place-preview.scss";
+@import "blocks/place-about.scss";
+@import "blocks/price.scss";
+@import "blocks/price-option.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form.scss";
+
+// FOOTER
+
+@import "blocks/footer.scss";
+@import "blocks/footer-title.scss";
+@import "blocks/future-tours.scss";
+@import "blocks/contacts.scss";
+@import "blocks/companies.scss";
+
+// MODAL
+
+@import "blocks/modal-order.scss";
+@import "blocks/modal-thx.scss";
+@import "blocks/close-cross.scss";

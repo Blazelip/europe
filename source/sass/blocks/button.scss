@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+
+  padding: 0;
+
+  font: inherit;
+  vertical-align: middle;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &--main {
+    @include fz-lh(10px, 12px);
+
+    font-weight: 500;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    background-color: $button-color;
+
+    &:hover,
+    &:focus {
+      background-color: $button-color-hover;
+    }
+
+    @media #{$screen-desktop} {
+      @include fz-lh(12px, 15px);
+
+      padding: 30px 0;
+      font-weight: 700;
+    }
+  }
+}

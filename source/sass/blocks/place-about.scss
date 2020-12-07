@@ -1,0 +1,216 @@
+.place-about {
+  @media #{$screen-desktop} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.place-about__description {
+  @media #{$screen-desktop} {
+    width: 370px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+}
+
+.place-about__title {
+  position: relative;
+
+  @media #{$screen-desktop} {
+    margin-bottom: 30px;
+
+    padding-bottom: 23px;
+    line-height: 164%;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 175px;
+      height: 4px;
+      background-color: $red;
+    }
+  }
+}
+
+.place-about__text {
+  @include fz-lh(16px, 175%);
+
+  text-align: center;
+  letter-spacing: -0.46px;
+  color: rgba($text-color, 0.7);
+
+  margin: 0;
+
+  @media #{$screen-desktop} {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+}
+
+.place-about__button {
+  @media #{$screen-desktop} {
+    width: 250px;
+  }
+}
+
+.place-about__feedback-container {
+  @include retina-full(greece);
+  @include retina-full(albania);
+  @include retina-full(macedonia);
+  @include retina-full(montenegro);
+  @include retina-full(croatia);
+
+  @media #{$screen-desktop} {
+    width: 700px;
+  }
+}
+
+.place-about__feedback {
+  background-color: $white;
+
+  @media #{$screen-tablet} {
+    padding: 30px;
+    width: 382px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-left: auto;
+    margin-top: 114px;
+    margin-bottom: 115px;
+  }
+}
+
+.place-about__feedback-title {
+  @include fz-lh(20px, 24px);
+
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.7px;
+
+  @media #{$screen-tablet} {
+    @include fz-lh(30px, 37px);
+
+    text-align: left;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 68px;
+    height: 1px;
+    background-color: $red;
+  }
+}
+
+.place-about__feedback-text {
+  @include fz-lh(14px, 200%);
+
+  text-align: center;
+  letter-spacing: -0.4px;
+  opacity: 0.7;
+
+  margin: 0;
+
+  @media #{$screen-tablet} {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+}
+
+.place-about__feedback-author {
+  @include fz-lh(16px, 20px);
+
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+
+  margin: 0;
+
+  @media #{$screen-tablet} {
+    display: flex;
+    align-items: center;
+
+    text-align: left;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 38px;
+    background-repeat: no-repeat;
+
+    @media #{$screen-tablet} {
+      margin-right: 16px;
+    }
+  }
+
+  &--greece {
+    &::before {
+      background-image: url("../img/author-greece@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/author-greece@2x.png");
+        background-size: 37px auto;
+      }
+    }
+  }
+
+  &--albania {
+    &::before {
+      background-image: url("../img/author-albania@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/author-albania@2x.png");
+        background-size: 37px auto;
+      }
+    }
+  }
+
+  &--macedonia {
+    &::before {
+      background-image: url("../img/author-macedonia@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/author-macedonia@2x.png");
+        background-size: 37px auto;
+      }
+    }
+  }
+
+  &--montenegro {
+    &::before {
+      background-image: url("../img/author-montenegro@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/author-montenegro@2x.png");
+        background-size: 37px auto;
+      }
+    }
+  }
+
+  &--croatia {
+    &::before {
+      background-image: url("../img/author-croatia@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/author-croatia@2x.png");
+        background-size: 37px auto;
+      }
+    }
+  }
+}

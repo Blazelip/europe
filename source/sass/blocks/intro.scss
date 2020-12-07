@@ -1,0 +1,77 @@
+.intro {
+  background-color: $grey;
+  background-image: url("../img/mountains-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  // background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mountains-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media #{$screen-tablet} {
+    background-image: url("../img/mountains-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mountains-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  @media #{$screen-desktop} {
+    background-image: url("../img/mountains-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mountains-desktop@2x.jpg");
+      background-size: 1920px auto;
+    }
+  }
+}
+
+.intro__block {
+  @media #{$screen-desktop} {
+    padding-left: 700px;
+    padding-top: 185px;
+    padding-bottom: 296px;
+  }
+}
+
+.intro__title {
+  margin: 0;
+
+  @media #{$screen-desktop} {
+    margin-bottom: 30px;
+  }
+}
+
+.intro__description {
+  @include fz-lh(16px, 170%);
+
+  text-align: center;
+
+  margin: 0;
+
+  @media #{$screen-tablet} {
+    color: $white;
+  }
+
+  @media #{$screen-desktop} {
+    margin-bottom: 39px;
+    text-align: left;
+  }
+}
+
+.intro__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 340px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.intro__button-icon {
+  fill: none;
+  stroke: $white;
+}

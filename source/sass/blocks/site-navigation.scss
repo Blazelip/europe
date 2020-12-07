@@ -1,0 +1,38 @@
+.site-navigation {
+  @include fz-lh(20px, 28px);
+  font-weight: 600;
+
+  @media #{$screen-tablet} {
+    @include fz-lh(18px, 23px);
+
+    font-weight: 500;
+  }
+
+  @media #{$screen-desktop} {
+    @include fz-lh(14px, 17px);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 775px;
+  }
+}
+
+.site-navigation__item {
+  @media #{$screen-desktop} {
+    margin-right: 40px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-navigation__link {
+  color: $text-color-dark;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media #{$screen-tablet} {
+    width: $tablet-width;
+    padding: 0 20px;
+  }
+
+  @media #{$screen-tablet} {
+    padding: 0;
+    width: 1170px;
+  }
+}

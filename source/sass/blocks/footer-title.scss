@@ -1,0 +1,14 @@
+.footer-title {
+  @include fz-lh(18px, 178%);
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  text-align: center;
+  color: $text-color-dark;
+
+  @media #{$screen-tablet} {
+    text-align: left;
+  }
+}

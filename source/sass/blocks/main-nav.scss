@@ -1,0 +1,35 @@
+.main-nav {
+  @media #{$screen-desktop} {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-nav__logo {
+  @media #{$screen-desktop} {
+    margin-right: 30px;
+  }
+}
+
+.main-nav__site-nav {
+  @media #{$screen-desktop} {
+    margin-right: 58px;
+  }
+}
+
+.main-nav__tel {
+  color: $text-color-dark;
+
+  @media #{$screen-desktop} {
+    width: 237px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}

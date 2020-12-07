@@ -1,0 +1,22 @@
+.telephone {
+  @include fz-lh(18px, 32px);
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: underline;
+
+
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}
+
+.telephone__icon {
+  fill: none;
+  margin-right: 6px;
+
+  &--price {
+    margin-right: 20px;
+  }
+}

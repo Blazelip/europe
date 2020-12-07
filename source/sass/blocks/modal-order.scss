@@ -1,0 +1,49 @@
+.modal-order {
+  display: none;
+
+  width: 728px;
+  height: 444px;
+  background-color: $light;
+
+  @media #{$screen-desktop} {
+    background-image: url("../img/modal-bg@1x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/modal-bg@2x.jpg");
+      background-size: 338px auto;
+    }
+  }
+}
+
+.modal-order--open {
+  display: block;
+}
+
+.modal-order__container {
+  position: relative;
+
+  margin-left: auto;
+  padding: 72px 61px;
+  width: 390px;
+
+  text-align: center;
+}
+
+.modal-order__title {
+  @include fz-lh(25px, 170%);
+
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 600;
+  color: #48494d;
+}
+
+.modal-order__form {
+
+}
+
+.modal-order__close {
+
+}
