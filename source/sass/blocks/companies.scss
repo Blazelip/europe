@@ -13,6 +13,8 @@
 .companies-msg {
   @include fz-lh(14px, 170%);
 
+  margin: 0;
+
   text-align: center;
 
   opacity: 0.5;

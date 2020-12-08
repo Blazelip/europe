@@ -8,7 +8,7 @@
 .place-about__description {
   @media #{$screen-desktop} {
     width: 370px;
-    padding-top: 15px;
+    padding-top: 11px;
     padding-bottom: 16px;
   }
 }
@@ -19,7 +19,7 @@
   @media #{$screen-desktop} {
     margin-bottom: 30px;
 
-    padding-bottom: 23px;
+    padding-bottom: 17px;
     line-height: 164%;
 
     &::after {
