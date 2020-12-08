@@ -6,7 +6,6 @@
 
   text-decoration: underline;
 
-
   @media (max-width: $tablet-width-only) {
     display: none;
   }
@@ -18,5 +17,6 @@
 
   &--price {
     margin-right: 20px;
+    color: $red;
   }
 }

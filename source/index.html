@@ -19,10 +19,10 @@
 
       <ul class="main-nav__site-nav site-navigation list list--resetted">
         <li class="site-navigation__item">
-          <a class="site-navigation__link" href="#">О путешествии</a>
+          <a class="site-navigation__link" href="#about">О путешествии</a>
         </li>
         <li class="site-navigation__item">
-          <a class="site-navigation__link" href="#">Цены</a>
+          <a class="site-navigation__link" href="#price">Цены</a>
         </li>
       </ul>
 
@@ -49,7 +49,7 @@
             потрясающая красота природы.
           </p>
 
-          <a href="#" class="intro__button button button--main">
+          <a href="#tabs" class="intro__button button button--main">
             <span>Смотреть тур</span>
             <svg class="intro__button-icon" width="14" height="14">
               <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
@@ -59,7 +59,7 @@
       </div>
     </section>
 
-    <section class="places wrapper">
+    <section id="about" class="places wrapper">
       <h2 class="places__title title">Места<br>посещения</h2>
 
       <p class="places__subtitle">
@@ -81,7 +81,7 @@
             <p class="place-preview__title">Греция</p>
 
             <div class="place-preview__menu">
-              <a class="place-preview__button" href="#">Смотреть подробнее</a>
+              <a class="place-preview__button" href="#tabs">Смотреть подробнее</a>
             </div>
           </artilce>
         </li>
@@ -99,7 +99,7 @@
             <p class="place-preview__title">Албания</p>
 
             <div class="place-preview__menu">
-              <a class="place-preview__button" href="#">Смотреть подробнее</a>
+              <a class="place-preview__button" href="#tabs">Смотреть подробнее</a>
             </div>
           </artilce>
         </li>
@@ -117,7 +117,7 @@
             <p class="place-preview__title">Македония</p>
 
             <div class="place-preview__menu">
-              <a class="place-preview__button" href="#">Смотреть подробнее</a>
+              <a class="place-preview__button" href="#tabs">Смотреть подробнее</a>
             </div>
           </artilce>
         </li>
@@ -135,7 +135,7 @@
             <p class="place-preview__title">Черногория</p>
 
             <div class="place-preview__menu">
-              <a class="place-preview__button" href="#">Смотреть подробнее</a>
+              <a class="place-preview__button" href="#tabs">Смотреть подробнее</a>
             </div>
           </artilce>
         </li>
@@ -152,13 +152,13 @@
             <p class="place-preview__title">Хорватия</p>
 
             <div class="place-preview__menu">
-              <a class="place-preview__button" href="#">Смотреть подробнее</a>
+              <a class="place-preview__button" href="#tabs">Смотреть подробнее</a>
             </div>
           </artilce>
         </li>
       </ul>
 
-      <ul class="places__switcher list list--resetted">
+      <ul id="tabs" class="places__switcher list list--resetted">
         <li class="places__switcher-item">
           <button class="places__switcher-btn button" type="button">Греция</button>
         </li>
@@ -320,7 +320,7 @@
       </ul>
     </section>
 
-    <section class="price wrapper">
+    <section id="price" class="price wrapper">
       <div class="price__info">
         <h2 class="price__title title">Цены</h2>
         <p class="price__description">
@@ -442,12 +442,18 @@
         <ul class="contacts__list list list--resetted">
           <li class="contacts__item">
             <a class="contacts__link contacts__link--mail" href="mailto:puteshestviemechta@gmail.ru">
+              <svg class="contacts__icon contacts__icon--mail" width="26" height="20">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
               <span class="contacts__mail-mobile">Почта</span>
               <span class="contacts__mail-desktop">puteshestviemechta@gmail.ru</span>
             </a>
           </li>
           <li class="contacts__item">
             <a class="contacts__link telephone contacts__link--phone" href="tel:+749978468446">
+              <svg class="contacts__icon contacts__icon--phone" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
               <span>+7(499)-784-684-46</span>
             </a>
           </li>

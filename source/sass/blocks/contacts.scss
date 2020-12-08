@@ -31,6 +31,19 @@
   }
 }
 
+.contacts__icon {
+  &--mail {
+    fill: #d7d9df;
+    margin-right: 15px;
+  }
+
+  &--phone {
+    fill: none;
+    color: #d7d9df;
+    margin-right: 11px;
+  }
+}
+
 .contacts__mail-mobile {
   display: none;
 

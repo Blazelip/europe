@@ -20,8 +20,6 @@
 
   text-align: center;
 
-  opacity: 0.5;
-
   @media #{$screen-tablet} {
     display: flex;
     flex-direction: column;
@@ -45,6 +43,15 @@
   margin-bottom: 10px;
 
   color: $text-color-dark;
+
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    color: $red;
+
+    opacity: 1;
+  }
 
   &:last-child {
     margin-bottom: 0;
