@@ -1,5 +1,6 @@
 .feedback {
   margin-bottom: 70px;
+
   background-repeat: no-repeat;
 
   @media #{$screen-mobile} {
@@ -7,9 +8,16 @@
   }
 
   @media #{$screen-tablet} {
-    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     height: 455px;
+    margin-bottom: 80px;
+
     background-image: url("../img/feedback-bg-tablet@1x.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/feedback-bg-tablet@2x.jpg");
@@ -38,15 +46,17 @@
   color: $text-color-dark;
 
   @media #{$screen-tablet} {
+    padding: 50px;
+
     background-color: $white;
     border-radius: 5px;
     box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
   }
 
   @media #{$screen-desktop} {
+    width: 656px;
     margin-left: 525px;
     padding: 50px 48px 49px 51px;
-    width: 656px;
   }
 }
 

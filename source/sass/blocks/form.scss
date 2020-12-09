@@ -7,6 +7,7 @@
 
   display: flex;
   flex-direction: column;
+
   margin-bottom: 20px;
 
   @media #{$screen-tablet} {
@@ -41,8 +42,8 @@
 }
 
 .form__input {
-  padding: 16px 15px 15px 26px;
   width: 100%;
+  padding: 16px 15px 15px 26px;
 
   background-color: $white;
   border: 1px solid rgba($grey, 0.3);
@@ -53,6 +54,7 @@
 
   &::placeholder {
     @include fz-lh(14px, 17px);
+
     color: $text-color-dark;
   }
 }
@@ -71,8 +73,8 @@
   }
 
   @media #{$screen-desktop} {
+    width: 176px;
     padding-top: 18px;
     padding-bottom: 17px;
-    width: 176px;
   }
 }

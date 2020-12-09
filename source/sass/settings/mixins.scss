@@ -7,6 +7,7 @@
   &--#{$name} {
     background-image: url("../img/full-#{$name}-mobile@1x.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/full-#{$name}-mobile@2x.jpg");

@@ -1,7 +1,11 @@
 .place-preview {
-  @media #{$screen-desktop} {
-    position: relative;
+  position: relative;
 
+  @media #{$screen-tablet} {
+    width: 288px;
+  }
+
+  @media #{$screen-desktop} {
     width: 350px;
 
     &:hover,
@@ -27,12 +31,11 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%);
   z-index: 1;
 
+  width: 215px;
   margin: 0;
   padding: 17px 0;
-  width: 215px;
 
   text-align: center;
   letter-spacing: -0.4px;
@@ -40,18 +43,22 @@
   color: $text-color;
 
   background-color: $white;
+
+  transform: translateX(-50%);
 }
 
 .place-preview__menu {
   position: absolute;
+  top: 0;
+  bottom: 0;
   z-index: 2;
 
   display: none;
   justify-content: center;
   align-items: center;
+
   width: 100%;
-  top: 0;
-  bottom: 0;
+
   background-color: rgba($black, 0.6);
 }
 

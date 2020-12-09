@@ -6,20 +6,32 @@
 }
 
 .place-about__description {
+  width: auto;
+
+  text-align: center;
+
+  @media #{$screen-tablet} {
+    padding-bottom: 30px;
+  }
+
   @media #{$screen-desktop} {
     width: 370px;
     padding-top: 11px;
     padding-bottom: 16px;
+
+    text-align: left;
   }
 }
 
 .place-about__title {
   position: relative;
 
+  margin-bottom: 20px;
+
   @media #{$screen-desktop} {
     margin-bottom: 30px;
-
     padding-bottom: 17px;
+
     line-height: 164%;
 
     &::after {
@@ -31,6 +43,7 @@
 
       width: 175px;
       height: 4px;
+
       background-color: $red;
     }
   }
@@ -39,20 +52,22 @@
 .place-about__text {
   @include fz-lh(16px, 175%);
 
-  text-align: center;
+  margin: 0;
+
   letter-spacing: -0.46px;
   color: rgba($text-color, 0.7);
 
-  margin: 0;
+  @media #{$screen-tablet} {
+    margin-bottom: 20px;
+  }
 
   @media #{$screen-desktop} {
     margin-bottom: 50px;
-    text-align: left;
   }
 }
 
 .place-about__button {
-  @media #{$screen-desktop} {
+  @media #{$screen-tablet} {
     width: 250px;
   }
 }
@@ -70,17 +85,20 @@
 }
 
 .place-about__feedback {
+  margin: 0 auto;
+
   background-color: $white;
 
   @media #{$screen-tablet} {
-    padding: 30px;
     width: 382px;
+    padding: 30px;
   }
 
   @media #{$screen-desktop} {
     margin-left: auto;
     margin-top: 114px;
     margin-bottom: 115px;
+    margin-right: 0;
   }
 }
 
@@ -112,6 +130,7 @@
 
     width: 68px;
     height: 1px;
+
     background-color: $red;
   }
 }
@@ -119,14 +138,16 @@
 .place-about__feedback-text {
   @include fz-lh(14px, 200%);
 
+  margin: 0;
+
   text-align: center;
   letter-spacing: -0.4px;
-  opacity: 0.7;
 
-  margin: 0;
+  opacity: 0.7;
 
   @media #{$screen-tablet} {
     margin-bottom: 35px;
+
     text-align: left;
   }
 }
@@ -134,11 +155,11 @@
 .place-about__feedback-author {
   @include fz-lh(16px, 20px);
 
+  margin: 0;
+
   text-align: center;
   font-weight: 500;
   letter-spacing: -0.5px;
-
-  margin: 0;
 
   @media #{$screen-tablet} {
     display: flex;
@@ -149,9 +170,12 @@
 
   &::before {
     content: "";
+
     display: block;
+
     width: 37px;
     height: 38px;
+
     background-repeat: no-repeat;
 
     @media #{$screen-tablet} {

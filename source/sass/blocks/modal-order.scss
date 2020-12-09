@@ -3,6 +3,7 @@
 
   width: 728px;
   height: 444px;
+
   background-color: $light;
 
   @media #{$screen-desktop} {
@@ -23,9 +24,9 @@
 .modal-order__container {
   position: relative;
 
+  width: 390px;
   margin-left: auto;
   padding: 72px 61px;
-  width: 390px;
 
   text-align: center;
 }

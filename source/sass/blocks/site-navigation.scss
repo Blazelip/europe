@@ -1,5 +1,8 @@
 .site-navigation {
   @include fz-lh(20px, 28px);
+
+  display: none;
+
   font-weight: 600;
 
   @media #{$screen-tablet} {
@@ -14,6 +17,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
     width: 775px;
   }
 }

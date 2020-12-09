@@ -1,13 +1,21 @@
 .contacts {
-  @media #{$screen-desktop} {
+  @media #{$screen-tablet} {
+    width: 331px;
+    padding-left: 50px;
+
     border-left: 1px solid #d7d9df;
+  }
+
+  @media #{$screen-desktop} {
     width: 389px;
     padding-left: 90px;
   }
 }
 
 .contacts__title {
-
+  @media #{$screen-desktop} {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__list {

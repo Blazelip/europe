@@ -1,13 +1,22 @@
 .places {
+  @media #{$screen-tablet} {
+    padding-top: 80px;
+  }
+
   @media #{$screen-desktop} {
     padding-top: 199px;
   }
 }
 
 .places__title {
+  @media #{$screen-tablet} {
+    margin-bottom: 20px;
+  }
+
   @media #{$screen-desktop} {
     position: relative;
 
+    max-width: 360px;
     margin-bottom: 32px;
     padding-bottom: 34px;
 
@@ -20,6 +29,7 @@
 
       width: 228px;
       height: 4px;
+
       background-color: $red;
     }
   }
@@ -33,9 +43,14 @@
   letter-spacing: -0.5px;
   text-align: center;
 
+  @media #{$screen-tablet} {
+    margin-bottom: 40px;
+  }
+
   @media #{$screen-desktop} {
-    text-align: left;
     margin-bottom: 56px;
+
+    text-align: left;
   }
 }
 
@@ -43,15 +58,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media #{$screen-tablet} and (max-width: $tablet-width-only) {
+    margin-bottom: 78px;
+  }
 }
 
 .places__preview-item {
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media #{$screen-tablet} and (max-width: $tablet-width-only) {
+    margin-right: 29px;
+    margin-bottom: 20px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
   @media #{$screen-desktop} {
     margin-right: 60px;
     margin-bottom: 101px;
 
-    &:nth-child(3n),
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
@@ -59,7 +90,10 @@
 
 .places__switcher {
   display: flex;
+
   border-bottom: 1px solid rgba($grey, 0.3);
+
+  overflow: scroll;
 
   @media #{$screen-desktop} {
     padding-bottom: 10px;
@@ -68,12 +102,10 @@
 }
 
 .places__switcher-item {
+  margin-right: 99px;
+
   &:last-child {
     margin-right: 0;
-  }
-
-  @media #{$screen-desktop} {
-    margin-right: 99px;
   }
 }
 
@@ -92,6 +124,10 @@
 }
 
 .places__original-list {
+  @media #{$screen-tablet} {
+    padding-top: 33px;
+  }
+
   @media #{$screen-desktop} {
     padding-top: 80px;
     padding-bottom: 100px;

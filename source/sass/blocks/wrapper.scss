@@ -8,8 +8,8 @@
     padding: 0 20px;
   }
 
-  @media #{$screen-tablet} {
-    padding: 0;
+  @media #{$screen-desktop} {
     width: 1170px;
+    padding: 0;
   }
 }

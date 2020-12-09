@@ -1,11 +1,11 @@
 .intro {
   background-color: $grey;
   background-image: url("../img/mountains-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mountains-mobile@2x.jpg");
-    background-size: 320px auto;
+    // background-size: 320px auto;
   }
 
   @media #{$screen-tablet} {
@@ -13,7 +13,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mountains-tablet@2x.jpg");
-      background-size: 768px auto;
+      // background-size: 768px auto;
     }
   }
 
@@ -22,23 +22,46 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mountains-desktop@2x.jpg");
-      background-size: 1920px auto;
+      // background-size: 1920px auto;
     }
   }
 }
 
 .intro__block {
+  @media #{$screen-tablet} {
+    padding-top: 60px;
+    padding-bottom: 83px;
+
+    text-align: center;
+  }
+
   @media #{$screen-desktop} {
-    padding-left: 700px;
+    width: 470px;
+    margin-left: auto;
     padding-top: 185px;
     padding-bottom: 296px;
+
+    text-align: left;
+  }
+}
+
+.intro__break {
+  display: none;
+
+  @media #{$screen-desktop} {
+    display: inline;
   }
 }
 
 .intro__title {
   margin: 0;
 
+  @media #{$screen-tablet} {
+    margin-bottom: 15px;
+  }
+
   @media #{$screen-desktop} {
+    max-width: 412px;
     margin-bottom: 30px;
   }
 }
@@ -48,27 +71,38 @@
 
   margin: 0;
 
-  text-align: center;
   letter-spacing: -0.46px;
 
   @media #{$screen-tablet} {
+    margin-bottom: 15px;
+
     color: $white;
   }
 
   @media #{$screen-desktop} {
+    max-width: 376px;
     margin-bottom: 35px;
+
     text-align: left;
   }
 }
 
 .intro__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
 
-  width: 340px;
+  width: 288px;
   padding-left: 40px;
   padding-right: 40px;
+
+  @media #{$screen-tablet} {
+    width: 250px;
+  }
+
+  @media #{$screen-desktop} {
+    width: 340px;
+  }
 }
 
 .intro__button-icon {

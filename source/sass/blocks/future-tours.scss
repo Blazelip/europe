@@ -1,4 +1,9 @@
 .future-tours {
+  @media #{$screen-tablet} {
+    width: 397px;
+    padding-right: 50px;
+  }
+
   @media #{$screen-desktop} {
     width: 401px;
     padding-right: 30px;

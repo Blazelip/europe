@@ -1,6 +1,11 @@
 .header {
+  display: flex;
+
+  min-height: 50px;
+
   @media #{$screen-desktop} {
     display: flex;
+
     min-height: 99px;
   }
 }

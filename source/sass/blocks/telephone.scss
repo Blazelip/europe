@@ -12,11 +12,13 @@
 }
 
 .telephone__icon {
-  fill: none;
   margin-right: 6px;
+
+  fill: none;
 
   &--price {
     margin-right: 20px;
+
     color: $red;
   }
 }
