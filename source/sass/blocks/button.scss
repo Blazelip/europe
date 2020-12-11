@@ -12,11 +12,12 @@
   cursor: pointer;
 
   &--main {
-    @include fz-lh(10px, 12px);
+    @include fz-lh(12px, 15px);
 
-    padding: 19px 15px;
+    padding: 30px 20px;
 
-    font-weight: 500;
+
+    font-weight: 700;
     color: $white;
     text-align: center;
     text-transform: uppercase;
@@ -29,12 +30,12 @@
       background-color: $button-color-hover;
     }
 
-    @media #{$screen-desktop} {
-      @include fz-lh(12px, 15px);
+    @media #{$screen-tablet} {
+      @include fz-lh(10px, 12px);
 
-      padding: 30px 20px;
+      padding: 19px 15px;
 
-      font-weight: 700;
+      font-weight: 500;
     }
   }
 }

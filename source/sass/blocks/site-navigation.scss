@@ -1,31 +1,29 @@
 .site-navigation {
-  @include fz-lh(20px, 28px);
+  @include fz-lh(14px, 17px);
 
-  display: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-  font-weight: 600;
+  width: 775px;
+
+  font-weight: 500;
 
   @media #{$screen-tablet} {
     @include fz-lh(18px, 23px);
 
-    font-weight: 500;
+    display: none;
   }
 
-  @media #{$screen-desktop} {
-    @include fz-lh(14px, 17px);
+  @media #{$screen-mobile} {
+    @include fz-lh(20px, 28px);
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    width: 775px;
+    font-weight: 600;
   }
 }
 
 .site-navigation__item {
-  @media #{$screen-desktop} {
-    margin-right: 40px;
-  }
+  margin-right: 40px;
 
   &:last-child {
     margin-right: 0;

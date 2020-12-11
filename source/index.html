@@ -159,27 +159,31 @@
           </article>
         </li>
       </ul>
+    </section>
 
-      <ul id="tabs" class="places__switcher list list--resetted js-tabs">
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Греция</button>
+    <section id="tabs" class="tabs wrapper">
+      <h2 class="visually-hidden">Подробнее о турах</h2>
+
+      <ul class="tabs__switcher list list--resetted js-tabs">
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button">Греция</button>
         </li>
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Албания</button>
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button">Албания</button>
         </li>
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Македония</button>
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button">Македония</button>
         </li>
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Черногория</button>
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button">Черногория</button>
         </li>
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Хорватия</button>
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button">Хорватия</button>
         </li>
       </ul>
 
-      <ul class="places__original-list list list--resetted js-slider">
-        <li class="places__original-item places__original-item--active">
+      <ul class="tabs__list list list--resetted js-slider">
+        <li class="tabs__item tabs__item--active">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Греция</h3>
@@ -209,7 +213,7 @@
           </article>
         </li>
 
-        <li class="places__original-item">
+        <li class="tabs__item">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Албания</h3>
@@ -236,7 +240,7 @@
           </article>
         </li>
 
-        <li class="places__original-item">
+        <li class="tabs__item">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Македония</h3>
@@ -264,7 +268,7 @@
           </article>
         </li>
 
-        <li class="places__original-item">
+        <li class="tabs__item">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Черногория</h3>
@@ -291,7 +295,7 @@
           </article>
         </li>
 
-        <li class="places__original-item">
+        <li class="tabs__item">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Хорватия</h3>
@@ -332,7 +336,7 @@
         </p>
         <p class="price__action">Свяжитесь с нами</p>
         <a class="price__contacts telephone" href="tel:749978468446">
-          <svg class="telephone__icon telephone__icon--price" width="30" height="30">
+          <svg class="telephone__icon" width="30" height="30">
             <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
           <span>+7 (499) -784-684-46</span>
@@ -481,7 +485,7 @@
       <h3 class="modal-order__title">Купить тур</h3>
 
       <form class="modal-order__form form" action="#" method="POST">
-        <div class="form__container form__container--modal">
+        <div class="form__container">
           <p class="form__field">
             <input class="form__input" id="phone-field-modal" type="tel" name="phone" placeholder="+7 Введите 10 цифр номера" required>
             <label class="visually-hidden" for="phone-field-modal">Телефон</label>

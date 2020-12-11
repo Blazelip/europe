@@ -1,5 +1,9 @@
 .logo {
   width: 70px;
+
+  @media #{$screen-tablet} {
+    width: 50px;
+  }
 }
 
 .logo__image {

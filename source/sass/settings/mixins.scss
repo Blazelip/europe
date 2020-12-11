@@ -5,28 +5,28 @@
 
 @mixin retina-full($name) {
   &--#{$name} {
-    background-image: url("../img/full-#{$name}-mobile@1x.jpg");
+    background-image: url("../img/full-#{$name}-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/full-#{$name}-mobile@2x.jpg");
+      background-image: url("../img/full-#{$name}-desktop@2x.jpg");
+      background-size: 430px auto;
     }
 
     @media #{$screen-tablet} {
       background-image: url("../img/full-#{$name}-tablet@1x.jpg");
+      background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/full-#{$name}-tablet@2x.jpg");
       }
     }
 
-    @media #{$screen-desktop} {
-      background-image: url("../img/full-#{$name}-desktop@1x.jpg");
+    @media #{$screen-mobile} {
+      background-image: url("../img/full-#{$name}-mobile@1x.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/full-#{$name}-desktop@2x.jpg");
-        background-size: 430px auto;
+        background-image: url("../img/full-#{$name}-mobile@2x.jpg");
       }
     }
   }

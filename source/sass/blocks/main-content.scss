@@ -1,7 +1,9 @@
 .main-content {
-  @media #{$screen-desktop} {
-    background-image: url("../img/background.svg");
-    background-repeat: no-repeat;
-    background-position: 238px 2587px;
+  background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-position: 238px 2587px;
+
+  @media #{$screen-tablet} {
+    background: none;
   }
 }

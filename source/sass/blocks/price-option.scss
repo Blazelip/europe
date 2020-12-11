@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
 
-  width: 288px;
+  width: 370px;
+  padding: 40px 30px 30px;
 
   background-color: $white;
   border: 1px solid rgba($grey, 0.3);
@@ -37,10 +38,6 @@
       color: rgba($red, 1);
     }
 
-    .price-option__name {
-      letter-spacing: 0;
-    }
-
     .price-option__text::after {
       background-color: $red;
       opacity: 1;
@@ -55,37 +52,35 @@
     width: 288px;
     padding: 30px 20px 0;
   }
-
-  @media #{$screen-desktop} {
-    width: 370px;
-    padding: 40px 30px 30px;
-  }
 }
 
 .price-option__info {
-  margin-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 36px;
 
   color: rgba($black, 0.7);
 
-  @media #{$screen-desktop} {
-    display: flex;
-    justify-content: space-between;
+  @media #{$screen-tablet} {
+    display: block;
 
-    margin-bottom: 36px;
+    margin-bottom: 11px;
+
+    text-align: center;
   }
 }
 
 .price-option__name {
-  @include fz-lh(24px, 38px);
+  @include fz-lh(28px, 38px);
 
   margin: 0;
 
   font-weight: 600;
-  text-align: center;
   letter-spacing: -1.3px;
 
-  @media #{$screen-desktop} {
-    font-size: 28px;
+  @media #{$screen-tablet} {
+    font-size: 24px;
   }
 }
 
@@ -94,12 +89,7 @@
 
   margin: 0;
 
-  text-align: center;
   font-weight: 700;
-
-  @media #{$screen-desktop} {
-    text-align: right;
-  }
 }
 
 .price-option__text {
@@ -108,10 +98,9 @@
   position: relative;
 
   margin: 0;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-
-  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 29px;
+  padding-right: 43px;
 
   &::after {
     content: "";
@@ -127,12 +116,10 @@
     opacity: 0.3;
   }
 
-  @media #{$screen-desktop} {
-    margin-bottom: 30px;
-    padding-bottom: 29px;
-    padding-right: 43px;
-
-    text-align: left;
+  @media #{$screen-tablet} {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-right: 0;
   }
 }
 
@@ -145,7 +132,7 @@
 .price-option__feature {
   position: relative;
 
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding-left: 30px;
 
   &:last-child {
@@ -166,12 +153,16 @@
     background-repeat: no-repeat;
   }
 
-  @media #{$screen-desktop} {
-    margin-bottom: 15px;
+  @media #{$screen-tablet} {
+    margin-bottom: 10px;
   }
 }
 
 .price-option__button {
   width: 100%;
   margin-top: auto;
+
+  @media #{$screen-tablet} {
+
+  }
 }

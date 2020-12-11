@@ -1,19 +1,17 @@
 .place-preview {
   position: relative;
 
-  @media #{$screen-tablet} {
-    width: 288px;
+  width: 350px;
+
+  &:hover,
+  &:focus {
+    .place-preview__menu {
+      display: flex;
+    }
   }
 
-  @media #{$screen-desktop} {
-    width: 350px;
-
-    &:hover,
-    &:focus {
-      .place-preview__menu {
-        display: flex;
-      }
-    }
+  @media #{$screen-tablet} {
+    width: 288px;
   }
 }
 

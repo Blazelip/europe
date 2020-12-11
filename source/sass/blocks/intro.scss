@@ -1,11 +1,10 @@
 .intro {
   background-color: $grey;
-  background-image: url("../img/mountains-mobile@1x.jpg");
+  background-image: url("../img/mountains-desktop@1x.jpg");
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/mountains-mobile@2x.jpg");
-    // background-size: 320px auto;
+    background-image: url("../img/mountains-desktop@2x.jpg");
   }
 
   @media #{$screen-tablet} {
@@ -13,63 +12,49 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mountains-tablet@2x.jpg");
-      // background-size: 768px auto;
     }
   }
 
-  @media #{$screen-desktop} {
-    background-image: url("../img/mountains-desktop@1x.jpg");
+  @media #{$screen-mobile} {
+    background-image: url("../img/mountains-mobile@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mountains-desktop@2x.jpg");
-      // background-size: 1920px auto;
+      background-image: url("../img/mountains-mobile@2x.jpg");
     }
   }
 }
 
 .intro__block {
+  width: 470px;
+  margin-left: auto;
+  padding-top: 185px;
+  padding-bottom: 296px;
+
   @media #{$screen-tablet} {
+    margin-left: 0;
     padding-top: 60px;
     padding-bottom: 83px;
 
     text-align: center;
   }
-
-  @media #{$screen-desktop} {
-    width: 470px;
-    margin-left: auto;
-    padding-top: 185px;
-    padding-bottom: 296px;
-
-    text-align: left;
-  }
-}
-
-.intro__break {
-  display: none;
-
-  @media #{$screen-desktop} {
-    display: inline;
-  }
 }
 
 .intro__title {
+  max-width: 412px;
   margin: 0;
+  margin-bottom: 30px;
 
   @media #{$screen-tablet} {
     margin-bottom: 15px;
-  }
-
-  @media #{$screen-desktop} {
-    max-width: 412px;
-    margin-bottom: 30px;
   }
 }
 
 .intro__description {
   @include fz-lh(16px, 170%);
 
+  max-width: 376px;
   margin: 0;
+  margin-bottom: 35px;
 
   letter-spacing: -0.46px;
 
@@ -78,13 +63,6 @@
 
     color: $white;
   }
-
-  @media #{$screen-desktop} {
-    max-width: 376px;
-    margin-bottom: 35px;
-
-    text-align: left;
-  }
 }
 
 .intro__button {
@@ -92,7 +70,7 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 288px;
+  width: 340px;
   padding-left: 40px;
   padding-right: 40px;
 
@@ -100,8 +78,8 @@
     width: 250px;
   }
 
-  @media #{$screen-desktop} {
-    width: 340px;
+  @media #{$screen-mobile} {
+    width: 100%;
   }
 }
 
