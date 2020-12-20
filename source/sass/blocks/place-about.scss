@@ -1,9 +1,15 @@
 .place-about {
   display: flex;
   justify-content: space-between;
+
+  @media #{$screen-tablet} {
+    display: block;
+  }
 }
 
 .place-about__description {
+  // outline: 1px solid tomato;
+
   width: 370px;
   padding-top: 11px;
   padding-bottom: 16px;
@@ -69,10 +75,13 @@
 
   @media #{$screen-mobile} {
     width: 100%;
+    max-width: 288px;
   }
 }
 
 .place-about__feedback-container {
+  // outline: 1px solid tomato;
+
   @include retina-full(greece);
   @include retina-full(albania);
   @include retina-full(macedonia);
@@ -80,6 +89,19 @@
   @include retina-full(croatia);
 
   width: 700px;
+
+  @media #{$screen-tablet} {
+    width: auto;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-top: 80px;
+    padding-bottom: 1px;
+
+  }
+
+  @media #{$screen-tablet} {
+    padding-top: 50px;
+  }
 }
 
 .place-about__feedback {
@@ -91,10 +113,12 @@
 
   @media #{$screen-tablet} {
     margin: 0 auto;
+    margin-bottom: -32px;
   }
 
   @media #{$screen-mobile} {
     width: 268px;
+    margin-bottom: -66px;
     padding: 30px 20px 34px;
   }
 }

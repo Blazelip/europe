@@ -19,7 +19,18 @@
 
   border-bottom: 1px solid rgba($grey, 0.3);
 
-  overflow: scroll;
+  @media #{$screen-tablet} {
+    width: auto;
+    margin-right: calc(50% - 50vw);
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
 .tabs__switcher-item {
@@ -27,6 +38,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media #{$screen-tablet} {
+    scroll-snap-align: start;
   }
 }
 
@@ -49,6 +64,10 @@
 
   @media #{$screen-tablet} {
     padding-top: 33px;
+  }
+
+  @media #{$screen-mobile} {
+    padding-top: 24px;
   }
 }
 

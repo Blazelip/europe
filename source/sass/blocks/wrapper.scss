@@ -3,12 +3,11 @@
   margin: 0 auto;
 
   @media #{$screen-tablet} {
-    width: $tablet-width;
+    width: auto;
     padding: 0 20px;
   }
 
   @media #{$screen-mobile} {
-    width: $mobile-width;
     padding: 0 15px;
   }
 }

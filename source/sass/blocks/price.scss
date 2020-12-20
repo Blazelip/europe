@@ -9,12 +9,12 @@
   @media #{$screen-tablet} {
     display: block;
 
-    padding-top: 80px;
+    padding-top: 112px;
     padding-bottom: 100px;
   }
 
   @media #{$screen-mobile} {
-    padding-top: 45px;
+    padding-top: 111px;
     padding-bottom: 50px;
   }
 }
@@ -27,7 +27,7 @@
   @media #{$screen-tablet} {
     width: auto;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 30px;
 
     text-align: center;
   }
@@ -110,6 +110,10 @@
     text-decoration: underline;
     font-size: 18px;
     color: $red;
+
+    & .telephone__icon {
+      display: none;
+    }
   }
 }
 
@@ -125,6 +129,7 @@
 .price__item {
   display: flex;
 
+  width: 370px;
   margin-right: 30px;
 
   &:last-child {
@@ -132,17 +137,22 @@
   }
 
   @media #{$screen-tablet} {
-    margin-right: 50px;
+    width: calc(100% * 0.79 / 2);
+    max-width: 370px;
+    margin-right: 6.9%;
   }
 
   @media #{$screen-mobile} {
     display: block;
 
+    width: auto;
     margin-bottom: 30px;
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
 
     &:last-child {
       margin-bottom: 0;
+      margin-right: auto;
     }
   }
 }

@@ -8,7 +8,7 @@
 }
 
 .main-nav__site-nav {
-  margin-right: 58px;
+  margin-right: 55px;
 }
 
 .main-nav__tel {
@@ -19,6 +19,12 @@
   &:hover,
   &:focus {
     color: $red;
+  }
+
+  &.telephone {
+    @media #{$screen-tablet} {
+      display: none;
+    }
   }
 }
 

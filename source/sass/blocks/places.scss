@@ -2,12 +2,12 @@
   padding-top: 199px;
 
   @media #{$screen-tablet} {
-    padding-top: 108px;
+    padding-top: 80px;
     padding-bottom: 38px;
   }
 
   @media #{$screen-mobile} {
-    padding-top: 80px;
+    padding-top: 108px;
     padding-bottom: 20px;
   }
 }
@@ -66,9 +66,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media #{$screen-mobile} {
+    display: block;
+  }
 }
 
 .places__preview-item {
+  width: 350px;
   margin-right: 60px;
   margin-bottom: 101px;
 
@@ -89,11 +94,13 @@
   }
 
   @media #{$screen-tablet} {
-    margin-right: 29px;
-    margin-bottom: 20px;
+    width: calc(100% * 0.79 / 2);
+    margin-right: 4%;
+    margin-bottom: 4%;
   }
 
   @media #{$screen-mobile} {
+    width: auto;
     margin-bottom: 35px;
     margin-right: 0;
   }

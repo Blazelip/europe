@@ -16,4 +16,8 @@
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+
+  @media #{$screen-mobile} {
+    display: block;
+  }
 }

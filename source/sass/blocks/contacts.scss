@@ -5,12 +5,15 @@
   border-left: 1px solid #d7d9df;
 
   @media #{$screen-tablet} {
-    width: 331px;
+    width: 45.6%;
     padding-left: 50px;
   }
 
   @media #{$screen-mobile} {
     width: auto;
+    padding: 30px 0 20px;
+
+    text-align: center;
 
     border-left: 0;
     border-top: 1px solid #d7d9df;

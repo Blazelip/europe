@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
 
-  width: 370px;
   padding: 40px 30px 30px;
 
   background-color: $white;
@@ -25,6 +24,10 @@
 
     border-radius: 6px;
     border: 2px solid $red;
+
+    @media #{$screen-tablet} {
+      border-radius: 6px 6px 0 0;
+    }
   }
 
   &:hover {
@@ -49,8 +52,8 @@
   }
 
   @media #{$screen-tablet} {
-    width: 288px;
-    padding: 30px 20px 0;
+    border-radius: 6px 6px 0 0;
+    padding: 30px 0 0;
   }
 }
 
@@ -65,6 +68,7 @@
   @media #{$screen-tablet} {
     display: block;
 
+    padding: 0 20px;
     margin-bottom: 11px;
 
     text-align: center;
@@ -117,9 +121,13 @@
   }
 
   @media #{$screen-tablet} {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     padding-right: 0;
+
+    text-align: center;
   }
 }
 
@@ -127,6 +135,10 @@
   @include fz-lh(16px, 200%);
 
   margin-bottom: 30px;
+
+  @media #{$screen-tablet} {
+    padding: 0 20px;
+  }
 }
 
 .price-option__feature {
@@ -162,7 +174,7 @@
   width: 100%;
   margin-top: auto;
 
-  @media #{$screen-tablet} {
-
+  @media #{$screen-mobile} {
+    // max-width: 288px;
   }
 }
