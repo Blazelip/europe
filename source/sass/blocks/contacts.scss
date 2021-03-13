@@ -5,8 +5,11 @@
   border-left: 1px solid #d7d9df;
 
   @media #{$screen-tablet} {
+    align-self: start;
+
     width: 45.6%;
     padding-left: 50px;
+    padding-bottom: 38px;
   }
 
   @media #{$screen-mobile} {

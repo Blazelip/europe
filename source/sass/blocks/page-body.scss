@@ -6,4 +6,8 @@
   font-family: $default-font;
   font-weight: 400;
   color: $text-color;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
 }

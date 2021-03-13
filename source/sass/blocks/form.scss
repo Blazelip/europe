@@ -11,12 +11,16 @@
 
   margin-bottom: 25px;
 
+  .modal-order & {
+    grid-template-columns: 1fr;
+  }
+
   @media #{$screen-tablet} {
     margin-bottom: 20px;
   }
 
   @media #{$screen-mobile} {
-    grid-template-columns: none;
+    grid-template-columns: 1fr;
   }
 }
 

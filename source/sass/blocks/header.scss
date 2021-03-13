@@ -1,9 +1,3 @@
 .header {
-  display: flex;
-
-  min-height: 99px;
-
-  @media #{$screen-tablet} {
-    min-height: 50px;
-  }
+  position: relative;
 }

@@ -74,6 +74,10 @@
 
   font-weight: 600;
 
+  @media #{$screen-tablet} {
+    margin-bottom: 9px;
+  }
+
   @media #{$screen-mobile} {
     margin-bottom: 20px;
   }

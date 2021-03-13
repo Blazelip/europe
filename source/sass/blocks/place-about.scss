@@ -94,12 +94,11 @@
     width: auto;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    padding-top: 80px;
+    padding-top: 79px;
     padding-bottom: 1px;
-
   }
 
-  @media #{$screen-tablet} {
+  @media #{$screen-mobile} {
     padding-top: 50px;
   }
 }
@@ -113,7 +112,7 @@
 
   @media #{$screen-tablet} {
     margin: 0 auto;
-    margin-bottom: -32px;
+    margin-bottom: -35px;
   }
 
   @media #{$screen-mobile} {
@@ -147,6 +146,16 @@
     height: 1px;
 
     background-color: $red;
+
+    @media #{$screen-mobile} {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  @media #{$screen-tablet} {
+    margin-bottom: 22px;
   }
 
   @media #{$screen-mobile} {

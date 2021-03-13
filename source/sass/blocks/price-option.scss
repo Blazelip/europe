@@ -84,6 +84,7 @@
   letter-spacing: -1.3px;
 
   @media #{$screen-tablet} {
+    margin-bottom: 6px;
     font-size: 24px;
   }
 }

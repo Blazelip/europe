@@ -24,6 +24,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media #{$screen-tablet} {
+    margin-bottom: 30px;
+  }
+
   @media #{$screen-mobile} {
     justify-content: center;
   }
@@ -39,7 +43,7 @@
   margin-bottom: 10px;
 
   @media #{$screen-tablet} {
-    margin-right: 7.6%;
+    margin-right: 13.9%;
     margin-bottom: 0;
   }
 

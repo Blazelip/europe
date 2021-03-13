@@ -30,7 +30,7 @@
     width: 400px;
     margin-right: auto;
     padding-top: 60px;
-    padding-bottom: 83px;
+    padding-bottom: 82px;
 
     text-align: center;
   }
@@ -78,7 +78,7 @@
 
   @media #{$screen-tablet} {
     max-width: none;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
   }
 
   @media #{$screen-mobile} {

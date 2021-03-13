@@ -1,5 +1,8 @@
 .modal-thx {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
 
   display: none;
   justify-content: center;
@@ -9,6 +12,9 @@
   height: 444px;
 
   background-color: $light;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  transform: translate(-50%, -50%);
 }
 
 .modal-thx__text {

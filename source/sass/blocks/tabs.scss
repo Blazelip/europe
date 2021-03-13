@@ -3,7 +3,7 @@
 
   @media #{$screen-tablet} {
     padding-bottom: 0;
-    padding-top: 40px;
+    padding-top: 47px;
   }
 
   @media #{$screen-mobile} {
@@ -22,6 +22,8 @@
   @media #{$screen-tablet} {
     width: auto;
     margin-right: calc(50% - 50vw);
+    padding-bottom: 15px;
+    margin-left: 18px;
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -30,6 +32,10 @@
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+
+  @media #{$screen-mobile} {
+    margin-left: 0;
   }
 }
 

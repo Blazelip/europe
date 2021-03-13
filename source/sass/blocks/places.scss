@@ -34,7 +34,7 @@
 
   @media #{$screen-tablet} {
     max-width: none;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     padding-bottom: 0;
 
     &::after {
@@ -49,6 +49,7 @@
   margin: 0;
   margin-bottom: 56px;
 
+  color: rgba($grey, 0.7);
   letter-spacing: -0.5px;
 
   @media #{$screen-tablet} {
@@ -96,7 +97,7 @@
   @media #{$screen-tablet} {
     width: calc(100% * 0.79 / 2);
     margin-right: 4%;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
   }
 
   @media #{$screen-mobile} {
