@@ -1,50 +1,61 @@
 .place-about {
-  @media #{$screen-desktop} {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
+  @media #{$screen-tablet} {
+    display: block;
   }
 }
 
 .place-about__description {
-  width: auto;
+  // outline: 1px solid tomato;
 
-  text-align: center;
+  width: 370px;
+  padding-top: 11px;
+  padding-bottom: 16px;
 
   @media #{$screen-tablet} {
+    width: auto;
+    padding-top: 0;
     padding-bottom: 30px;
+
+    text-align: center;
   }
 
-  @media #{$screen-desktop} {
-    width: 370px;
-    padding-top: 11px;
-    padding-bottom: 16px;
-
-    text-align: left;
+  @media #{$screen-tablet} {
+    padding-bottom: 52px;
   }
 }
 
 .place-about__title {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 17px;
 
-  @media #{$screen-desktop} {
-    margin-bottom: 30px;
-    padding-bottom: 17px;
+  line-height: 164%;
 
-    line-height: 164%;
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 175px;
+    height: 4px;
+
+    background-color: $red;
+  }
+
+  @media #{$screen-tablet} {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+
+    line-height: 150%;
 
     &::after {
-      content: "";
-
-      position: absolute;
-      bottom: 0;
-      left: 0;
-
-      width: 175px;
-      height: 4px;
-
-      background-color: $red;
+      display: none;
     }
   }
 }
@@ -53,6 +64,7 @@
   @include fz-lh(16px, 175%);
 
   margin: 0;
+  margin-bottom: 50px;
 
   letter-spacing: -0.46px;
   color: rgba($text-color, 0.7);
@@ -60,50 +72,62 @@
   @media #{$screen-tablet} {
     margin-bottom: 20px;
   }
-
-  @media #{$screen-desktop} {
-    margin-bottom: 50px;
-  }
 }
 
 .place-about__button {
-  @media #{$screen-tablet} {
-    width: 250px;
+  width: 250px;
+
+  @media #{$screen-mobile} {
+    width: 100%;
+    max-width: 288px;
   }
 }
 
 .place-about__feedback-container {
+  // outline: 1px solid tomato;
+
   @include retina-full(greece);
   @include retina-full(albania);
   @include retina-full(macedonia);
   @include retina-full(montenegro);
   @include retina-full(croatia);
 
-  @media #{$screen-desktop} {
-    width: 700px;
+  width: 700px;
+
+  @media #{$screen-tablet} {
+    width: auto;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-top: 79px;
+    padding-bottom: 1px;
+  }
+
+  @media #{$screen-mobile} {
+    padding-top: 50px;
   }
 }
 
 .place-about__feedback {
-  margin: 0 auto;
+  width: 382px;
+  margin: 114px 0 115px auto;
+  padding: 30px;
 
   background-color: $white;
 
   @media #{$screen-tablet} {
-    width: 382px;
-    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: -35px;
   }
 
-  @media #{$screen-desktop} {
-    margin-left: auto;
-    margin-top: 114px;
-    margin-bottom: 115px;
-    margin-right: 0;
+  @media #{$screen-mobile} {
+    width: 268px;
+    margin-bottom: -66px;
+    padding: 30px 20px 34px;
   }
 }
 
 .place-about__feedback-title {
-  @include fz-lh(20px, 24px);
+  @include fz-lh(30px, 37px);
 
   position: relative;
 
@@ -112,14 +136,8 @@
   padding-bottom: 11px;
 
   font-weight: 500;
-  text-align: center;
+
   letter-spacing: -0.7px;
-
-  @media #{$screen-tablet} {
-    @include fz-lh(30px, 37px);
-
-    text-align: left;
-  }
 
   &::after {
     content: "";
@@ -132,6 +150,22 @@
     height: 1px;
 
     background-color: $red;
+
+    @media #{$screen-mobile} {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  @media #{$screen-tablet} {
+    margin-bottom: 22px;
+  }
+
+  @media #{$screen-mobile} {
+    @include fz-lh(20px, 24px);
+
+    text-align: center;
   }
 }
 
@@ -139,33 +173,33 @@
   @include fz-lh(14px, 200%);
 
   margin: 0;
+  margin-bottom: 33px;
 
-  text-align: center;
   letter-spacing: -0.4px;
 
   opacity: 0.7;
 
-  @media #{$screen-tablet} {
-    margin-bottom: 35px;
+  @media #{$screen-mobile} {
+    margin-bottom: 20px;
 
-    text-align: left;
+    text-align: center;
   }
 }
 
 .place-about__feedback-author {
   @include fz-lh(16px, 20px);
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   margin: 0;
 
-  text-align: center;
   font-weight: 500;
   letter-spacing: -0.5px;
 
-  @media #{$screen-tablet} {
-    display: flex;
-    align-items: center;
-
-    text-align: left;
+  @media #{$screen-mobile} {
+    flex-direction: column;
   }
 
   &::before {
@@ -175,11 +209,13 @@
 
     width: 37px;
     height: 38px;
+    margin-right: 16px;
 
     background-repeat: no-repeat;
 
-    @media #{$screen-tablet} {
-      margin-right: 16px;
+    @media #{$screen-mobile} {
+      margin-right: 0;
+      margin-bottom: 10px;
     }
   }
 

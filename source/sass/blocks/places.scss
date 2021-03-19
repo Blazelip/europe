@@ -1,37 +1,49 @@
 .places {
+  padding-top: 199px;
+
   @media #{$screen-tablet} {
     padding-top: 80px;
+    padding-bottom: 38px;
   }
 
-  @media #{$screen-desktop} {
-    padding-top: 199px;
+  @media #{$screen-mobile} {
+    padding-top: 108px;
+    padding-bottom: 20px;
   }
 }
 
 .places__title {
-  @media #{$screen-tablet} {
-    margin-bottom: 20px;
+  position: relative;
+
+  max-width: 360px;
+  margin-bottom: 32px;
+  padding-bottom: 34px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 228px;
+    height: 4px;
+
+    background-color: $red;
   }
 
-  @media #{$screen-desktop} {
-    position: relative;
-
-    max-width: 360px;
-    margin-bottom: 32px;
-    padding-bottom: 34px;
+  @media #{$screen-tablet} {
+    max-width: none;
+    margin-bottom: 22px;
+    padding-bottom: 0;
 
     &::after {
-      content: "";
-
-      position: absolute;
-      bottom: 0;
-      left: 0;
-
-      width: 228px;
-      height: 4px;
-
-      background-color: $red;
+      display: none;
     }
+  }
+
+  @media #{$screen-mobile} {
+    margin-bottom: 20px;
   }
 }
 
@@ -39,18 +51,19 @@
   @include fz-lh(16px, 175%);
 
   margin: 0;
+  margin-bottom: 56px;
 
+  color: rgba($grey, 0.7);
   letter-spacing: -0.5px;
-  text-align: center;
 
   @media #{$screen-tablet} {
     margin-bottom: 40px;
+
+    text-align: center;
   }
 
-  @media #{$screen-desktop} {
-    margin-bottom: 56px;
-
-    text-align: left;
+  @media #{$screen-mobile} {
+    margin-bottom: 20px;
   }
 }
 
@@ -59,85 +72,45 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @media #{$screen-tablet} and (max-width: $tablet-width-only) {
-    margin-bottom: 78px;
+  @media #{$screen-mobile} {
+    display: block;
   }
 }
 
 .places__preview-item {
+  width: 350px;
+  margin-right: 60px;
+  margin-bottom: 101px;
+
   &:last-child {
     margin-right: 0;
   }
 
-  @media #{$screen-tablet} and (max-width: $tablet-width-only) {
-    margin-right: 29px;
-    margin-bottom: 20px;
+  @media #{$screen-desktop} {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 
+  @media (min-width: $tablet-width) and #{$screen-tablet} {
     &:nth-child(2n) {
       margin-right: 0;
     }
   }
 
-  @media #{$screen-desktop} {
-    margin-right: 60px;
-    margin-bottom: 101px;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-  }
-}
-
-.places__switcher {
-  display: flex;
-
-  border-bottom: 1px solid rgba($grey, 0.3);
-
-  overflow: scroll;
-
-  @media #{$screen-desktop} {
-    padding-bottom: 10px;
-    width: 899px;
-  }
-}
-
-.places__switcher-item {
-  margin-right: 99px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.places__switcher-btn {
-  @include fz-lh(20px, 24px);
-
-  text-align: center;
-  letter-spacing: -0.4px;
-  font-weight: 500;
-  color: rgba($text-color, 0.3);
-
-  &:hover,
-  &:focus {
-    color: $red;
-  }
-}
-
-.places__original-list {
   @media #{$screen-tablet} {
-    padding-top: 33px;
+    width: calc(100% * 0.79 / 2);
+    margin-right: 4%;
+    margin-bottom: 3%;
   }
 
-  @media #{$screen-desktop} {
-    padding-top: 80px;
-    padding-bottom: 100px;
-  }
-}
+  @media #{$screen-mobile} {
+    width: auto;
+    margin-bottom: 30px;
+    margin-right: 0;
 
-.places__original-item {
-  display: none;
-
-  &--active {
-    display: block;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

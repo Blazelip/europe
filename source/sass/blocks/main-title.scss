@@ -1,18 +1,19 @@
 .main-title {
-  @include fz-lh(24px, 150%);
+  @include fz-lh(55px, 145%);
 
   font-weight: 600;
   color: $white;
-  text-align: center;
+
+  letter-spacing: -1px;
+
 
   @media #{$screen-tablet} {
     font-size: 30px;
+    text-align: center;
+    letter-spacing: normal;
   }
 
-  @media #{$screen-desktop} {
-    @include fz-lh(55px, 145%);
-
-    letter-spacing: -1px;
-    text-align: left;
+  @media #{$screen-mobile} {
+    @include fz-lh(24px, 150%);
   }
 }

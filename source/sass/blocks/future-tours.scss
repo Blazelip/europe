@@ -1,42 +1,54 @@
 .future-tours {
+  width: 401px;
+  padding-right: 30px;
+  padding-left: 13px;
+
   @media #{$screen-tablet} {
-    width: 397px;
+    width: 54.4%;
     padding-right: 50px;
+    padding-left: 0;
   }
 
-  @media #{$screen-desktop} {
-    width: 401px;
-    padding-right: 30px;
-    padding-left: 13px;
+  @media #{$screen-mobile} {
+    width: auto;
+    padding-right: 0;
   }
-}
-
-.future-tours__title {
-
 }
 
 .future-tours__container {
   display: flex;
   flex-wrap: wrap;
+
+  @media #{$screen-tablet} {
+    margin-bottom: 30px;
+  }
+
+  @media #{$screen-mobile} {
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
 
 .future-tours__list {
   @include fz-lh(14px, 17px);
 
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 50px;
+  margin-bottom: 10px;
 
   @media #{$screen-tablet} {
-    display: flex;
-    flex-direction: column;
-
-    margin-right: 30px;
-
-    text-align: left;
+    margin-right: 13.9%;
+    margin-bottom: 0;
   }
 
-  @media #{$screen-desktop} {
-    margin-right: 50px;
-    margin-bottom: 10px;
+  @media #{$screen-mobile} {
+    width: 50%;
+    margin: 0;
+    margin-bottom: 21px;
+
+    text-align: center;
   }
 
   &:last-child {

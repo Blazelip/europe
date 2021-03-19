@@ -1,37 +1,31 @@
 .companies {
+  width: 379px;
+  padding-left: 49px;
+
+  border-left: 1px solid #d7d9df;
+
   @media #{$screen-tablet} {
     width: 100%;
-    padding-left: 49px;
+    padding: 30px 0 25px;
 
+    text-align: center;
+
+    border-left: 0;
     border-top: 1px solid #d7d9df;
   }
-
-  @media #{$screen-desktop} {
-    width: 379px;
-    padding-left: 49px;
-
-    border-top: 0;
-    border-left: 1px solid #d7d9df;
-  }
-}
-
-.companies__title {
-
 }
 
 .companies-msg {
   @include fz-lh(14px, 170%);
 
+  max-width: 320px;
   margin: 0;
 
-  text-align: center;
   color: $text-color-dark;
 
   opacity: 0.5;
 
-  @media #{$screen-desktop} {
-    max-width: 320px;
-
-    text-align: left;
+  @media #{$screen-tablet} {
+    max-width: none;
   }
 }

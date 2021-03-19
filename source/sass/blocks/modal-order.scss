@@ -1,19 +1,39 @@
 .modal-order {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
   display: none;
 
   width: 728px;
-  height: 444px;
 
   background-color: $light;
+  background-image: url("../img/modal-bg@1x.jpg");
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
-  @media #{$screen-desktop} {
-    background-image: url("../img/modal-bg@1x.jpg");
-    background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/modal-bg@2x.jpg");
-      background-size: 338px auto;
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/modal-bg@2x.jpg");
+    background-size: 338px auto;
+  }
+
+  @media #{$screen-tablet} {
+    width: 390px;
+
+    background-image: none;
+  }
+
+  @media #{$screen-mobile} {
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    box-shadow: none;
+    transform: none;
   }
 }
 
@@ -25,10 +45,21 @@
   position: relative;
 
   width: 390px;
+  min-height: 444px;
   margin-left: auto;
   padding: 72px 61px;
 
   text-align: center;
+
+  @media #{$screen-tablet} {
+    width: auto;
+  }
+
+  @media #{$screen-mobile} {
+    min-height: auto;
+    height: 100vh;
+    padding: 100px 16px;
+  }
 }
 
 .modal-order__title {
@@ -39,12 +70,4 @@
 
   font-weight: 600;
   color: #48494d;
-}
-
-.modal-order__form {
-
-}
-
-.modal-order__close {
-
 }

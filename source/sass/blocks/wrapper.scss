@@ -1,15 +1,13 @@
 .wrapper {
-  width: 320px;
+  width: 1170px;
   margin: 0 auto;
-  padding: 0 15px;
 
   @media #{$screen-tablet} {
-    width: $tablet-width;
+    width: auto;
     padding: 0 20px;
   }
 
-  @media #{$screen-desktop} {
-    width: 1170px;
-    padding: 0;
+  @media #{$screen-mobile} {
+    padding: 0 15px;
   }
 }

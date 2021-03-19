@@ -1,44 +1,32 @@
-.form {
-
-}
-
 .form__container {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+
+  .modal-order & {
+    grid-template-columns: 1fr;
+  }
 
   @media #{$screen-tablet} {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media #{$screen-desktop} {
-    margin-bottom: 25px;
-  }
-
-  &--modal {
-    display: block;
-
     margin-bottom: 20px;
+  }
+
+  @media #{$screen-mobile} {
+    grid-template-columns: 1fr;
+    margin-bottom: 15px;
+
+    .modal-order & {
+      margin-bottom: 19px;
+    }
   }
 }
 
 .form__field {
   margin: 0;
-  margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  .feedback__form & {
-    @media #{$screen-tablet} {
-      margin-bottom: 0;
-    }
-  }
 }
 
 .form__input {
@@ -47,10 +35,6 @@
 
   background-color: $white;
   border: 1px solid rgba($grey, 0.3);
-
-  @media #{$screen-tablet} {
-    width: 269px;
-  }
 
   &::placeholder {
     @include fz-lh(14px, 17px);
@@ -66,15 +50,17 @@
 }
 
 .form__button {
-  width: 100%;
+  width: 176px;
+  padding-top: 18px;
+  padding-bottom: 17px;
 
   @media #{$screen-tablet} {
     width: 250px;
+    padding-top: 19px;
+    padding-bottom: 19px;
   }
 
-  @media #{$screen-desktop} {
-    width: 176px;
-    padding-top: 18px;
-    padding-bottom: 17px;
+  @media #{$screen-mobile} {
+    width: 100%;
   }
 }

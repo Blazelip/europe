@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
-  <header class="header wrapper">
-    <nav class="main-nav">
+  <header class="header">
+    <nav class="main-nav wrapper main-nav--nojs">
       <a href="" class="main-nav__logo logo">
         <picture>
           <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
-          <img class="logo__image" src="img/logo.svg" alt="Логотип">
+          <img class="logo__image" src="img/logo.svg" alt="Логотип Europe">
         </picture>
       </a>
 
@@ -72,7 +72,7 @@
       <ul class="places__preview-list list list--resetted">
         <li class="places__preview-item">
           <article class="place-preview">
-            <picture class="place-preview__picture">
+            <picture>
               <source type="image/webp" media="(min-width: 1280px)" srcset="img/preview-greece-desktop@1x.webp 1x, img/preview-greece-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/preview-greece-tablet@1x.webp 1x, img/preview-greece-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/preview-greece-mobile@1x.webp 1x, img/preview-greece-mobile@2x.webp 2x">
@@ -159,27 +159,31 @@
           </article>
         </li>
       </ul>
+    </section>
 
-      <ul id="tabs" class="places__switcher list list--resetted js-tabs">
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Греция</button>
+    <section id="tabs" class="tabs wrapper">
+      <h2 class="visually-hidden">Подробнее о турах</h2>
+
+      <ul class="tabs__switcher list list--resetted js-tabs">
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button" data-btn="greece">Греция</button>
         </li>
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Албания</button>
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button" data-btn="albania">Албания</button>
         </li>
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Македония</button>
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button" data-btn="macedonia">Македония</button>
         </li>
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Черногория</button>
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button" data-btn="montenegro">Черногория</button>
         </li>
-        <li class="places__switcher-item">
-          <button class="places__switcher-btn button" type="button">Хорватия</button>
+        <li class="tabs__switcher-item">
+          <button class="tabs__switcher-btn button" type="button" data-btn="croatia">Хорватия</button>
         </li>
       </ul>
 
-      <ul class="places__original-list list list--resetted js-slider">
-        <li class="places__original-item places__original-item--active">
+      <ul class="tabs__list list list--resetted js-slider">
+        <li class="tabs__item tabs__item--active" data-tab="greece">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Греция</h3>
@@ -192,7 +196,7 @@
                 достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
               </p>
 
-              <a href="#" class="place-about__button button button--main">Купить тур сейчас</a>
+              <a href="#" class="place-about__button button button--main js-order">Купить тур сейчас</a>
             </div>
 
             <div class="place-about__feedback-container place-about__feedback-container--greece">
@@ -209,7 +213,7 @@
           </article>
         </li>
 
-        <li class="places__original-item">
+        <li class="tabs__item" data-tab="albania">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Албания</h3>
@@ -220,7 +224,7 @@
                 Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
               </p>
 
-              <a href="#" class="place-about__button button button--main">Купить тур сейчас</a>
+              <a href="#" class="place-about__button button button--main js-order">Купить тур сейчас</a>
             </div>
 
             <div class="place-about__feedback-container place-about__feedback-container--albania">
@@ -236,7 +240,7 @@
           </article>
         </li>
 
-        <li class="places__original-item">
+        <li class="tabs__item" data-tab="macedonia">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Македония</h3>
@@ -246,7 +250,7 @@
                 А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.
               </p>
 
-              <a href="#" class="place-about__button button button--main">Купить тур сейчас</a>
+              <a href="#" class="place-about__button button button--main js-order">Купить тур сейчас</a>
             </div>
 
 
@@ -264,7 +268,7 @@
           </article>
         </li>
 
-        <li class="places__original-item">
+        <li class="tabs__item" data-tab="montenegro">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Черногория</h3>
@@ -275,7 +279,7 @@
                 При этом длина каньона составляет 80 км.
               </p>
 
-              <a href="#" class="place-about__button button button--main">Купить тур сейчас</a>
+              <a href="#" class="place-about__button button button--main js-order">Купить тур сейчас</a>
             </div>
 
             <div class="place-about__feedback-container place-about__feedback-container--montenegro">
@@ -291,7 +295,7 @@
           </article>
         </li>
 
-        <li class="places__original-item">
+        <li class="tabs__item" data-tab="croatia">
           <article class="place-about">
             <div class="place-about__description">
               <h3 class="place-about__title title">Хорватия</h3>
@@ -303,7 +307,7 @@
                 формировавшимися тысячи и тысячи лет.
               </p>
 
-              <a href="#" class="place-about__button button button--main">Купить тур сейчас</a>
+              <a href="#" class="place-about__button button button--main js-order">Купить тур сейчас</a>
             </div>
 
             <div class="place-about__feedback-container place-about__feedback-container--croatia">
@@ -332,7 +336,7 @@
         </p>
         <p class="price__action">Свяжитесь с нами</p>
         <a class="price__contacts telephone" href="tel:749978468446">
-          <svg class="telephone__icon telephone__icon--price" width="30" height="30">
+          <svg class="telephone__icon" width="30" height="30">
             <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
           <span>+7 (499) -784-684-46</span>
@@ -356,7 +360,7 @@
               <li class="price-option__feature">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
 
-            <a href="#" class="price-option__button button button--main">Купить тур сейчас</a>
+            <a href="#" class="price-option__button button button--main js-order">Купить тур сейчас</a>
           </article>
         </li>
 
@@ -377,7 +381,7 @@
               <li class="price-option__feature">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
 
-            <a href="#" class="price-option__button button button--main">Купить тур сейчас</a>
+            <a href="#" class="price-option__button button button--main js-order">Купить тур сейчас</a>
           </article>
         </li>
       </ul>
@@ -388,7 +392,7 @@
         <h2 class="feedback__title">У Вас остались вопросы?</h2>
         <p class="feedback__description">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
 
-        <form class="feedback__form form" action="#" method="POST">
+        <form class="form" action="#" method="POST">
           <div class="form__container">
             <p class="form__field">
               <input class="form__input" id="phone-field" type="tel" name="phone" placeholder="+7 Введите 10 цифр номера" required>
@@ -412,7 +416,7 @@
   <footer class="footer">
     <div class="footer__wrapper wrapper">
       <section class="future-tours">
-        <h3 class="future-tours__title footer-title">Следующие путешествия</h3>
+        <h3 class="footer-title">Следующие путешествия</h3>
 
         <div class="future-tours__container">
           <div class="future-tours__list">
@@ -444,7 +448,7 @@
       <section class="contacts">
         <h3 class="contacts__title footer-title">Наши контакты</h3>
 
-        <ul class="contacts__list list list--resetted">
+        <ul class="list list--resetted">
           <li class="contacts__item">
             <a class="contacts__link contacts__link--mail" href="mailto:puteshestviemechta@gmail.ru">
               <svg class="contacts__icon contacts__icon--mail" width="26" height="20">
@@ -466,7 +470,7 @@
       </section>
 
       <section class="companies">
-        <h3 class="companies__title footer-title">Корпоративные путешествия</h3>
+        <h3 class="footer-title">Корпоративные путешествия</h3>
         <p class="companies-msg">
           Также вы можете заказать индивидуальное путешествие под вашу компанию.
           Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух,
@@ -480,8 +484,8 @@
     <div class="modal-order__container">
       <h3 class="modal-order__title">Купить тур</h3>
 
-      <form class="modal-order__form form" action="#" method="POST">
-        <div class="form__container form__container--modal">
+      <form class="modal-order__form form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="form__container">
           <p class="form__field">
             <input class="form__input" id="phone-field-modal" type="tel" name="phone" placeholder="+7 Введите 10 цифр номера" required>
             <label class="visually-hidden" for="phone-field-modal">Телефон</label>
@@ -507,5 +511,7 @@
     <button class="modal-thx__close button close-cross" type="button" aria-label="Закрыть окно"></button>
   </section>
   <script src="js/script.min.js"></script>
+
+  <div class="overlay"></div>
 </body>
 </html>
