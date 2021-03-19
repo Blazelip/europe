@@ -1,7 +1,3 @@
-.form {
-
-}
-
 .form__container {
   position: relative;
 
@@ -21,6 +17,11 @@
 
   @media #{$screen-mobile} {
     grid-template-columns: 1fr;
+    margin-bottom: 15px;
+
+    .modal-order & {
+      margin-bottom: 19px;
+    }
   }
 }
 

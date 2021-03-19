@@ -41,6 +41,10 @@
       display: none;
     }
   }
+
+  @media #{$screen-mobile} {
+    margin-bottom: 20px;
+  }
 }
 
 .places__subtitle {
@@ -102,7 +106,11 @@
 
   @media #{$screen-mobile} {
     width: auto;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

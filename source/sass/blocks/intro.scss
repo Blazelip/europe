@@ -55,13 +55,14 @@
     margin-bottom: 14px;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    padding: 81px 20px;
+    padding: 81px 20px 88px;
 
     background-image: url("../img/mountains-mobile@1x.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mountains-mobile@2x.jpg");
+      background-size: cover;
     }
   }
 }

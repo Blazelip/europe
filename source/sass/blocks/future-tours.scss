@@ -12,12 +12,7 @@
   @media #{$screen-mobile} {
     width: auto;
     padding-right: 0;
-    padding-bottom: 20px;
   }
-}
-
-.future-tours__title {
-
 }
 
 .future-tours__container {
@@ -30,6 +25,7 @@
 
   @media #{$screen-mobile} {
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -50,6 +46,8 @@
   @media #{$screen-mobile} {
     width: 50%;
     margin: 0;
+    margin-bottom: 21px;
+
     text-align: center;
   }
 

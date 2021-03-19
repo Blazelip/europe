@@ -21,6 +21,10 @@
 
     text-align: center;
   }
+
+  @media #{$screen-tablet} {
+    padding-bottom: 52px;
+  }
 }
 
 .place-about__title {
@@ -196,8 +200,6 @@
 
   @media #{$screen-mobile} {
     flex-direction: column;
-
-    // text-align: center;
   }
 
   &::before {

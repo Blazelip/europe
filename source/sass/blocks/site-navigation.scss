@@ -28,10 +28,23 @@
 
     width: 100%;
     height: 100vh;
+    padding: 134px 0;
 
     font-weight: 600;
 
-    &--opened {
+    background-color: $white;
+
+    .main-nav--nojs & {
+      position: static;
+      display: block;
+
+      min-width: auto;
+      min-height: 250px;
+      height: auto;
+      padding: 15px 0;
+    }
+
+    .main-nav--opened & {
       display: block;
     }
   }
@@ -43,10 +56,37 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media #{$screen-mobile} {
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding: 17px 16px;
+
+    background-color: #f8f8f8;
+  }
 }
 
 .site-navigation__link {
   color: $text-color-dark;
+
+  &::after {
+    @media #{$screen-mobile} {
+      content: "";
+      width: 25px;
+      height: 25px;
+      margin-left: auto;
+
+      background-image: url("../img/small-arrow.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media #{$screen-mobile} {
+    display: flex;
+    align-items: center;
+
+    color: #48494d;
+  }
 
   &:hover,
   &:focus {
